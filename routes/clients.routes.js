@@ -1,5 +1,5 @@
 module.exports = (app) => {
-    const client = require('../controllers/client.controller.js');
+    const client = require('./controllers/client.controller.js');
 
     // Create a new user
     app.post('/clients', client.create);
