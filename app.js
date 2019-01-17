@@ -54,7 +54,10 @@ router.get('/clients/:id', client.findOne);
 router.put('/clients/:id', client.update);
 
 // Update client at first connexion
-router.put('/clients/:id', client.updateFirstconnection);
+router.put('/clients/firstConnexion/:id', client.updateFirstconnexion);
+
+// Update client at first connexion
+router.put('/clients/updateCompany/:id', client.updateCompany);
 
 // Delete a client with clientid
 router.delete('/clients/:id', client.delete);

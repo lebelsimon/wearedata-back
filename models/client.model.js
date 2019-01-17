@@ -11,6 +11,7 @@ const ClientSchema = mongoose.Schema({
     company_citycode:String,
     company_city:String,
     website:String,
+    login:String,
     password:String,
 }, {
     timestamps: true
