@@ -4,6 +4,8 @@ const bodyParser = require ('koa-bodyparser');
 
 const cors = require ('koa-cors');
 
+var jwt = require('jsonwebtoken');
+
 // const userRoutes = require ('./routes/clients.routes.js');
 const client = require('./controllers/client.controller.js');
 
@@ -61,6 +63,11 @@ router.put('/clients/updateCompany/:id', client.updateCompany);
 
 // Delete a client with clientid
 router.delete('/clients/:id', client.delete);
+
+
+//login via password
+
+//jwt
 
 //router.get('/api/users', async (ctx) => {
 //  ctx.body = users;
